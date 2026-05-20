@@ -1,0 +1,252 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   VARIABILI COLORI
+========================= */
+
+:root{
+    --bordeaux: #800020;
+    --oro: #D4AF37;
+    --bianco: #FFFFFF;
+    --grigio-chiaro: #f5f5f5;
+    --testo: #222222;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bianco);
+    color: var(--testo);
+    line-height: 1.6;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background-color: var(--bordeaux);
+    color: var(--bianco);
+    padding: 20px 0;
+}
+
+header h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav{
+    background-color: var(--oro);
+    padding: 15px 0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--bordeaux);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: var(--bianco);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    background-color: var(--grigio-chiaro);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--bordeaux);
+}
+
+.hero p{
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* =========================
+   SEZIONI
+========================= */
+
+section{
+    padding: 60px 0;
+}
+
+section h2{
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--bordeaux);
+    font-size: 2rem;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card{
+    background-color: var(--bianco);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 20px;
+}
+
+.card-content h3{
+    margin-bottom: 10px;
+    color: var(--bordeaux);
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn{
+    display: inline-block;
+    background-color: var(--bordeaux);
+    color: var(--bianco);
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: var(--oro);
+    color: var(--bordeaux);
+}
+
+/* =========================
+   FORM
+========================= */
+
+form{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form textarea{
+    resize: vertical;
+    min-height: 150px;
+}
+
+form button{
+    border: none;
+    cursor: pointer;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background-color: var(--bordeaux);
+    color: var(--bianco);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* =========================
+   ACCESSIBILITÀ
+========================= */
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus{
+    outline: 3px solid var(--oro);
+    outline-offset: 3px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width: 768px){
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero h2{
+        font-size: 2rem;
+    }
+
+    header h1{
+        font-size: 2rem;
+    }
+}
