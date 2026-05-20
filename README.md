@@ -8,7 +8,7 @@ Sito istituzionale per associazione culturale no-profit.
 - JavaScript
 
 ## Team
-Caminada Kevin
-Radici Nicola
-Benaglio Christian
-Fedriga Fabio
+- Caminada Kevin
+- Radici Nicola
+- Benaglio Christian
+- Fedriga Fabio
